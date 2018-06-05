@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+
+    <title>Hangman</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img id="header-image" src="assets/images/guess-that-opening.gif"/>
+        <div class="rules">A fun letter-guessing game for guessing anime openings<i>!</i> Guess a letter to get started<i>!</i> (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ </div>
+        <div class="row">
+            <div class="col-md-6 image-column">
+                <img id="win-image" src="assets/images/you-win.png"/>
+                <img id="lose-image" src="assets/images/you-lose.png">
+                <h2 id="wannaPlayAgain">Press Any Key to Try Again!</h2>
+                <h5 id="needAHint">Psst, need a hint? The song is already playing for you as soon as you guess your first letter! Also, these album covers might give a few hints. ;)</h5>
+                <img id="albumCovers" src="assets/images/albumcovers.png" height="250" width="450"/>
+                <center><img id="braveShine" src="assets/images/braveshine.jpg" height="150" width="150"/></center>
+                <center><img id="readySteadyGo" src="assets/images/readysteadygo.jpg" height="150" width="150"/></center>
+                <center><img id="clickSong" src="assets/images/click.jpg" height="150" width="150"/></center>
+                <center><img id="nostalgicRainfall" src="assets/images/nostalgicrainfall.jpg" height="150" width="150"/></center>
+                <center><img id="firstKiss" src="assets/images/firstkiss.jpg" height="150" width="150"/></center>
+                <center><img id="crossingField" src="assets/images/crossingfield.jpg" height="150" width="150"/></center>
+                <center><img id="hikaruNara" src="assets/images/hikarunara.png" height="150" width="150"/></center>
+                <center><img id="hereAndThere" src="assets/images/hereandthere.jpg" height="150" width="150"/></center>
+
+            </div>
+            <div class="col-md-6 gameplay-column">
+                <h4>Wins:</h4>
+                <h5 id="totalWins"></h5>
+                <h4>Losses:</h4>
+                <h5 id="totalLosses"></h5>
+                <h4>Current Word:</h4>
+                <h3 id="currentWord"></h3>
+                <h4>Guesses Remaining:</h4>
+                <h6 id="remainingGuesses"></h6>
+                <h4>Letters Guessed:</h4>
+                <h4 id="guessedLetters"></h4>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
